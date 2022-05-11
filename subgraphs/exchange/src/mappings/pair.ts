@@ -378,6 +378,7 @@ export function onMint(event: MintEvent): void {
     return
   }
 
+
   const mint = Mint.load(mints[mints.length - 1])
 
   const pair = getPair(event.address)
