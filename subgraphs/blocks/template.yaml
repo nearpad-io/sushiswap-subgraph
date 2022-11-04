@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Blocks
-repository: https://github.com/sushiswap/sushiswap-subgraph
+repository: https://github.com/nearpad-io/
 schema:
   file: ./schema.graphql
 dataSources:

@@ -58,6 +58,10 @@ export const FACTORY_ADDRESS = Address.fromString(
   '{{ factory_address }}{{^factory_address}}0x0000000000000000000000000000000000000000{{/factory_address}}'
 )
 
+export const ROUTER_ADDRESS = Address.fromString(
+  '{{ router_address }}{{^router_address}}0x0000000000000000000000000000000000000000{{/router_address}}'
+)
+
 export const MASTER_CHEF_ADDRESS = Address.fromString(
   '{{ masterchef_address }}{{^masterchef_address}}0x0000000000000000000000000000000000000000{{/masterchef_address}}'
 )

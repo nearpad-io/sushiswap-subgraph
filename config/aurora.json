@@ -1,0 +1,41 @@
+{
+  "network": "aurora",
+  "factory_address": "0x34484b4e416f5d4b45d4add0b6ef6ca08fced8f1",
+  "router_address": "0xbae0d7dfcd03c90ebce003c58332c1346a72836a",
+  "sushi_token_address": "0x885f8cf6e45bdd3fdcdc644efdcd0ac93880c781",
+  "sushi_address": "0x885f8CF6E45bdd3fdcDc644efdcd0AC93880c781",
+  "usdc_weth_pair": "0x7cbfa129706f2dfff62b71eccf8bd53aa9a45672",
+  "usdt_weth_pair": "0x32de32da4ac549bf46b5843dd7fc76761f9fca2c",
+  "weth_address": "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb",
+  "masterchef_address": "0x2aef68f92cfbafa4b542f60044c7596e65612d20",
+  "native_address": "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb",
+  "usdt_address": "0x4988a896b1227218e4a686fde5eabdcabd91571f",
+  "usdc_address": "0xb12bfca5a55806aaf64e99521918a4bf0fc40802",
+  "dai_address": "0xe3520349f477a5f6eb06107066048508498a291b",
+
+  "sushi_usdt_pair_address": "0x1fd6cbbfc0363aa394bd77fc74f64009bf54a7e9",
+
+  "sushi_bar_address": "0x5a9b5fe4fab31280a6397e3d87f3565bbfeeb995",
+  "sushi_maker_address": "0x8298a10e50ba026ff17a8ba1151c37a7981a0b5a",
+
+
+
+  "minimum_usd_threshold_new_pairs": "3000",
+  "minimum_liquidity_threshold_eth": "3",
+  "factory": {
+    "address": "0x34484b4e416f5d4b45d4add0b6ef6ca08fced8f1",
+    "startBlock": "51858420"
+  },
+  "router": {
+    "address": "0xbae0d7dfcd03c90ebce003c58332c1346a72836a",
+    "startBlock": "51858420"
+  },
+  "whitelist": [
+    "0x885f8cf6e45bdd3fdcdc644efdcd0ac93880c781",
+    "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb",
+    "0xf4eb217ba2454613b15dbdea6e5f22276410e89e",
+    "0xe3520349f477a5f6eb06107066048508498a291b",
+    "0x4988a896b1227218e4a686fde5eabdcabd91571f",
+    "0xb12bfca5a55806aaf64e99521918a4bf0fc40802"
+  ]
+}

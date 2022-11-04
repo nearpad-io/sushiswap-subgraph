@@ -229,9 +229,9 @@ export function transfer(event: TransferEvent): void {
 
     user.xSushiAge = user.xSushiAge.plus(xSushiAge)
 
-    const xSushiAgeDestroyed = user.xSushiAge.div(user.xSushi).times(value)
+     const xSushiAgeDestroyed = user.xSushiAge.div(user.xSushi).times(value)
 
-    user.xSushiAgeDestroyed = user.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
+     user.xSushiAgeDestroyed = user.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
 
     // remove xSushiAge
     user.xSushiAge = user.xSushiAge.minus(xSushiAgeDestroyed)

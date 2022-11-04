@@ -1,6 +1,6 @@
 specVersion: 0.0.3
 description: Masterchef
-repository: https://github.com/sushiswap/sushiswap-subgraph
+repository: https://github.com/nearpad-io/
 schema:
   file: ./schema.graphql
 dataSources:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: {{ startBlock }}
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - MasterChef
