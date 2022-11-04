@@ -229,12 +229,12 @@ export function transfer(event: TransferEvent): void {
 
     user.xSushiAge = user.xSushiAge.plus(xSushiAge)
 
-    // const xSushiAgeDestroyed = user.xSushiAge.div(user.xSushi).times(value)
+     const xSushiAgeDestroyed = user.xSushiAge.div(user.xSushi).times(value)
 
-    // user.xSushiAgeDestroyed = user.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
+     user.xSushiAgeDestroyed = user.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
 
     // remove xSushiAge
-//    user.xSushiAge = user.xSushiAge.minus(xSushiAgeDestroyed)
+    user.xSushiAge = user.xSushiAge.minus(xSushiAgeDestroyed)
     // Update xSushi last
     user.xSushi = user.xSushi.minus(value)
 
@@ -250,8 +250,8 @@ export function transfer(event: TransferEvent): void {
     const barDays = event.block.timestamp.minus(bar.updatedAt).divDecimal(BigDecimal.fromString('86400'))
     const barXsushi = bar.xSushiMinted.minus(bar.xSushiBurned)
     bar.xSushiBurned = bar.xSushiBurned.plus(value)
-    // bar.xSushiAge = bar.xSushiAge.plus(barDays.times(barXsushi)).minus(xSushiAgeDestroyed)
-    // bar.xSushiAgeDestroyed = bar.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
+    bar.xSushiAge = bar.xSushiAge.plus(barDays.times(barXsushi)).minus(xSushiAgeDestroyed)
+    bar.xSushiAgeDestroyed = bar.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
     bar.sushiHarvested = bar.sushiHarvested.plus(what)
     bar.sushiHarvestedUSD = bar.sushiHarvestedUSD.plus(sushiHarvestedUSD)
     bar.updatedAt = event.block.timestamp
@@ -260,7 +260,7 @@ export function transfer(event: TransferEvent): void {
     history.xSushiSupply = bar.totalSupply
     history.xSushiBurned = history.xSushiBurned.plus(value)
     history.xSushiAge = bar.xSushiAge
-//    history.xSushiAgeDestroyed = history.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
+    history.xSushiAgeDestroyed = history.xSushiAgeDestroyed.plus(xSushiAgeDestroyed)
     history.sushiHarvested = history.sushiHarvested.plus(what)
     history.sushiHarvestedUSD = history.sushiHarvestedUSD.plus(sushiHarvestedUSD)
     history.ratio = bar.ratio
